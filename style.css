@@ -1,4 +1,17 @@
 * {
-    background-color: #F0EFF5;
     color: #091D36;
+}
+  
+.searchbar {
+    margin-bottom: 10px;
+  }
+  
+.recommendations {
+    margin-top: 50px;
+    border: 1px solid ;
+    padding: 30px;
+  }
+
+#recommendations {
+    background-color: wheat;
 }
