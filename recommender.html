@@ -16,7 +16,6 @@
         <h1 class="display-5 fw-bold text-center">Travel Recommender</h1>
         <p class="lead mb-4 text-center">Search or filter by "traveller type" to find personalized recommendations for your next adventure!</p>
     </div>
-
     <div class="container">
         <div class="searchbar text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -26,40 +25,21 @@
             <button onclick="searchInputs()" id="searchButton">Search</button>
             <button onclick="clearInputs()" id="clearButton">Clear</button>
         </div>
-
-    <div class="filters text-center">
-        <label for="regionSelect">Region:</label>
-        <select id="regionSelect">
-            <option value="all">All</option>
-            <option value="asia">Asia</option>
-            <option value="europe">Europe</option>
-            <option value="oceania">Oceania</option>
-            <option value="america">America</option>
-        </select>
-        <label for="travelTypeSelect">Travel Type:</label>
-        <select id="travelTypeSelect">
-            <option value="all">All</option>
-            <option value="beach">Beach</option>
-            <option value="nature">Nature</option>
-            <option value="shopping">Shopping</option>
-            <option value="culture">Culture</option>
-            <option value="nightlife">Nightlife</option>
-            <option value="adventure">Adventure</option>
-        </select>
-        <label for="pricePointSelect">Price Point:</label>
-        <select id="pricePointSelect">
-            <option value="all">All</option>
-            <option value="budget">Budget</option>
-            <option value="mid-range">Mid-range</option>
-            <option value="luxury">Luxury</option>
-        </select>
-        <button onclick="applyFilters()" id="filterButton">Apply Filters</button>
+        <div class="buttons text-center">
+            <button class="button-value">All</button>
+            <button class="button-value">Beach</button>
+            <button class="button-value">Nature</button>
+            <button class="button-value">Shopping</button>
+            <button class="button-value">Culture</button>
+            <button class="button-value">Nightlife</button>
+            <button class="button-value">Adventure</button>
+        </div>
+        <br><br>
+        <div id="results">
+            <!-- Recommendations will be displayed here -->
+                <!-- image, city, description, region, travel type, price point -->
+        </div>
     </div>
-    <br><br>
-    <h1 class="display-5 fw-bold text-center">Your Search Results:</h1>
-    <div id="results"></div>
-    <!-- Recommendations will be displayed here -->
-        <!-- image, city, description, region, travel type, price point -->
     <script src="script.js"></script>
 </body>
 </html>
