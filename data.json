@@ -1,0 +1,302 @@
+traveldestinations: [
+    {
+        "city": "Amsterdam, The Netherlands",
+        "description": "Picturesque city of canals, known for its museums, cycling culture, and vibrant nightlife.",
+        "travelType": "Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Auckland, New Zealand",
+        "description": "City of sails, surrounded by natural beauty, offering outdoor adventures and cultural experiences.",
+        "travelType": "Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Bali, Indonesia",
+        "description": "Tropical paradise offering serene beaches, lush landscapes, and vibrant cultural experiences.",
+        "travelType": "Beach, Nature, Culture, Nightlife, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Bangkok, Thailand",
+        "description": "Bustling capital of Thailand, offering vibrant markets, ornate temples, and delicious street food.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Barcelona, Spain",
+        "description": "Cosmopolitan city with stunning architecture, vibrant street scenes, and a rich cultural heritage.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Batam, Indonesia",
+        "description": "Indonesian island known for its resorts, golf courses, and duty-free shopping.",
+        "travelType": "Beach, Nature, Shopping",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Beijing, China",
+        "description": "Ancient capital of China, home to iconic landmarks like the Great Wall and Forbidden City.",
+        "travelType": "Culture, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Bintan, Indonesia",
+        "description": "Relaxing getaway with beautiful beaches, golf courses, and luxury resorts.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Busan, Korea",
+        "description": "Coastal city known for its beaches, seafood, and vibrant cultural scene.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Cebu, Philippines",
+        "description": "Philippines' Queen City of the South, known for its historic landmarks, beautiful beaches, and vibrant nightlife.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Edinburgh, Scotland",
+        "description": "Historic city with medieval architecture, surrounded by hills and coastline, offering cultural experiences and outdoor adventures.",
+        "travelType": "Culture, Nature",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Hanoi, Vietnam",
+        "description": "Capital of Vietnam, known for its centuries-old architecture, vibrant street life, and delicious cuisine.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Hawaii, USA",
+        "description": "Tropical paradise with stunning beaches, lush landscapes, and opportunities for outdoor adventures.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Ho Chi Minh City, Vietnam",
+        "description": "Formerly Saigon, bustling metropolis with historic landmarks, vibrant markets, and delicious street food.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Hoi An, Vietnam",
+        "description": "Historic town with well-preserved architecture, vibrant markets, and nearby beaches.",
+        "travelType": "Culture, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Hong Kong, China",
+        "description": "Dynamic city where East meets West, renowned for its skyline, shopping, and culinary scene.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Ipoh, Malaysia",
+        "description": "Charming city surrounded by limestone hills, known for its street food and colonial architecture.",
+        "travelType": "Nature, Culture, Adventure",
+        "pricePoint": "Budget"
+    },
+    {
+        "city": "Istanbul, Turkey",
+        "description": "City where East meets West, offering historic sites, bustling markets, and delicious cuisine.",
+        "travelType": "Culture, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Johor Bahru, Malaysia",
+        "description": "Gateway to Malaysia, known for its theme parks, shopping malls, and cultural attractions.",
+        "travelType": "Shopping",
+        "pricePoint": "Budget"
+    },
+    {
+        "city": "Krabi, Thailand",
+        "description": "Paradise for nature lovers, with towering limestone cliffs, turquoise waters, and pristine beaches.",
+        "travelType": "Beach, Nature, Nightlife, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Kuala Lumpar, Malaysia",
+        "description": "Capital of Malaysia, offering a mix of modern skyscrapers, historic landmarks, and diverse cuisine.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Kuching, Sarawak",
+        "description": "Charming city on the island of Borneo, known for its cultural diversity, nature reserves, and indigenous heritage.",
+        "travelType": "Nature, Culture, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Kyoto, Japan",
+        "description": "Historic city with traditional temples, gardens, and tea houses, preserving Japan's cultural heritage.",
+        "travelType": "Culture, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "London, United Kingdom",
+        "description": "Iconic capital of England, known for its historic landmarks, world-class museums, and diverse culture.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Los Angeles, USA",
+        "description": "City of dreams, offering beaches, Hollywood glamour, and diverse cultural experiences.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Madrid, Spain",
+        "description": "Vibrant capital of Spain, known for its art, culture, and lively street life.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Malacca, Malaysia",
+        "description": "Historic city with Dutch, Portuguese, and British influences, known for its colorful buildings and cuisine.",
+        "travelType": "Shopping, Culture",
+        "pricePoint": "Budget"
+    },
+    {
+        "city": "Male, Maldives",
+        "description": "Capital of the Maldives, offering luxury resorts, crystal-clear waters, and world-class diving.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Melbourne, Australia",
+        "description": "Cultural hub known for its arts scene, laneway cafes, and eclectic neighborhoods.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Miami, USA",
+        "description": "Vibrant city with beautiful beaches, lively nightlife, and diverse cultural experiences.",
+        "travelType": "Beach, Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Munich, Germany",
+        "description": "Cosmopolitan city with a rich cultural heritage, surrounded by scenic Bavarian landscapes.",
+        "travelType": "Nature, Culture",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "New York, USA",
+        "description": "City that never sleeps, offering iconic landmarks, Broadway shows, and diverse culinary experiences.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Osaka, Japan",
+        "description": "Culinary capital of Japan, known for its street food, historic landmarks, and vibrant nightlife.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Oslo, Norway",
+        "description": "Capital city nestled between fjords and forests, offering outdoor adventures and cultural attractions.",
+        "travelType": "Nature, Culture, Adventure",
+        "pricePoint": "Luxury"
+    },
+    {
+        "city": "Paris, France",
+        "description": "Romantic capital of France, famous for its art, architecture, and haute cuisine.",
+        "travelType": "Shopping, Culture",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Penang, Malaysia",
+        "description": "Foodie paradise with diverse cuisine, historic architecture, and beautiful beaches.",
+        "travelType": "Beach, Culture, Adventure",
+        "pricePoint": "Budget"
+    },
+    {
+        "city": "Perth, Australia",
+        "description": "Gateway to Western Australia's natural wonders, offering beautiful beaches and outdoor adventures.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Phnom Phen, Cambodia",
+        "description": "Capital city of Cambodia, rich in history, with bustling markets and ancient temples.",
+        "travelType": "Culture, Adventure",
+        "pricePoint": "Budget"
+    },
+    {
+        "city": "Phuket, Thailand",
+        "description": "Thailand's largest island, famous for its stunning beaches, water sports, and lively nightlife.",
+        "travelType": "Beach, Nature, Nightlife, Adventure",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Rome, Italy",
+        "description": "Eternal city with ancient ruins, Renaissance art, and vibrant street life.",
+        "travelType": "Culture, Nature",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "San Francisco, USA",
+        "description": "City by the bay, known for its iconic Golden Gate Bridge, diverse neighborhoods, and tech scene.",
+        "travelType": "Beach, Nature, Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Santorini, Greece",
+        "description": "Stunning Greek island known for its white-washed buildings, blue-domed churches, and breathtaking sunsets.",
+        "travelType": "Beach, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Seoul, Korea",
+        "description": "Modern metropolis with ancient palaces, bustling markets, and a vibrant K-pop culture.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Shanghai, China",
+        "description": "Modern metropolis blending traditional Chinese culture with futuristic skyscrapers and vibrant nightlife.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Budget, mid-range"
+    },
+    {
+        "city": "Sydney, Australia",
+        "description": "Vibrant city with iconic landmarks, stunning beaches, and a lively atmosphere.",
+        "travelType": "Beach, Nature, Shopping, Culture, Nightlife, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Tokyo, Japan",
+        "description": "Dynamic capital of Japan, blending traditional culture with cutting-edge technology and vibrant street life.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Toronto, Canada",
+        "description": "Dynamic city with diverse neighborhoods, cultural attractions, and vibrant culinary scene.",
+        "travelType": "Shopping, Culture, Nightlife",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Vancouver, Canada",
+        "description": "Scenic city surrounded by mountains and ocean, offering outdoor activities and cultural attractions.",
+        "travelType": "Culture, Nature, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Venice, Italy",
+        "description": "Romantic city of canals, renowned for its art, architecture, and gondola rides.",
+        "travelType": "Culture, Adventure",
+        "pricePoint": "Mid-range, luxury"
+    },
+    {
+        "city": "Zurich, Switzerland",
+        "description": "Financial hub with a picturesque old town, situated on the shores of Lake Zurich and surrounded by the Swiss Alps.",
+        "travelType": "Nature, Shopping, Culture, Adventure",
+        "pricePoint": "Luxury"
+    }
+]

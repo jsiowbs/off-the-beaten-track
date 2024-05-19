@@ -14,14 +14,20 @@
             <path d="M2.5 7a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5a.5.5 0 0 1 .5-.5m10 1v-.5A1.5 1.5 0 0 0 11 6h-1a1.5 1.5 0 0 0-1.5 1.5V8H8v8h5V8zM10 7h1a.5.5 0 0 1 .5.5V8h-2v-.5A.5.5 0 0 1 10 7M5 9.5A1.5 1.5 0 0 1 6.5 8H7v8h-.5A1.5 1.5 0 0 1 5 14.5zm9 6.5V8h.5A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5z"></path>
         </svg>
         <h1 class="display-5 fw-bold text-center">Travel Recommender</h1>
-        <p class="lead mb-4 text-center">Search or filter by region, traveler type, and budget to find personalized recommendations for your next adventure!</p>
+        <p class="lead mb-4 text-center">Search or filter by "traveller type" to find personalized recommendations for your next adventure!</p>
     </div>
+
     <div class="container">
-        <div class="searchbar">
-            <input type="text" name="search" id="searchInput" placeholder="Search by keywords...">
-            <button onclick="search()">Search</button>
-    </div>
-    <div class="filters">
+        <div class="searchbar text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+            <input type="text" id="searchInput" placeholder="Search by keywords...">
+            <button onclick="searchInputs()" id="searchButton">Search</button>
+            <button onclick="clearInputs()" id="clearButton">Clear</button>
+        </div>
+
+    <div class="filters text-center">
         <label for="regionSelect">Region:</label>
         <select id="regionSelect">
             <option value="all">All</option>
@@ -47,11 +53,13 @@
             <option value="mid-range">Mid-range</option>
             <option value="luxury">Luxury</option>
         </select>
-        <button onclick="applyFilters()">Apply Filters</button>
+        <button onclick="applyFilters()" id="filterButton">Apply Filters</button>
     </div>
-    <div id="recommendations" class="recommendations">
-    <!-- Javascript-generated recommendations will be displayed here -->
-    </div>
+    <br><br>
+    <h1 class="display-5 fw-bold text-center">Your Search Results:</h1>
+    <div id="results"></div>
+    <!-- Recommendations will be displayed here -->
+        <!-- image, city, description, region, travel type, price point -->
     <script src="script.js"></script>
 </body>
 </html>
