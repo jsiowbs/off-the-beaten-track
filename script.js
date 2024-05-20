@@ -384,18 +384,26 @@ function searchInputs() {
             rec.travelType.some(type => type.toLowerCase().includes(keyword)) ||
             rec.pricePoint.toLowerCase() === keyword)
         );
-
+    
   displayRecommendations(filtered);
 }
 
-// 4. clears search input and results
+// 4. enter to search
+const input = document.getElementById("searchInput");
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        document.getElementById("searchButton").click();
+    }
+});
+
+// 5. clears search input and results
 function clearInputs() {
     document.getElementById("searchInput").value = "";
     document.getElementById("results").innerHTML = "";
     displayRecommendations(recommendations);
     }
 
-// 5. filters recommendations by travel type
+// 6. filters recommendations by travel type
 function filterTravelType(category) {
     let filteredRecommendations;
         if (category.toLowerCase() === 'all') {
