@@ -289,7 +289,7 @@ const recommendations = [
     {
         "title": "Santorini, Greece",
         "region": "Europe",
-        "description": "A stunning Greek island known for its white-washed buildings, blue-domed churches, and breathtaking sunsets. Santorini's attractions include the town of Oia, the ancient ruins of Akrotiri, and its volcanic beaches. The island's charm is enhanced by its local cuisine and wine.",
+        "description": "A stunning Greek island known for its white-washed buildings, blue-domed churches, and breathtaking sunsets. Santorini's attractions include the town of Oia, the ancient ruins of Akrotiri, and its volcanic beaches. The island's charm is enhanced by its local cuisine, wine and romantic hangouts.",
         "travelType": ["Beach, Nature, Adventure"],
         "pricePoint": "$$"
     },
@@ -351,7 +351,6 @@ const recommendations = [
     }
   ]
 
-
 // 1. displays recommendations via loop
 function displayRecommendations(results) {
     document.getElementById("results").innerHTML = ""; 
@@ -388,7 +387,7 @@ function searchInputs() {
   displayRecommendations(filtered);
 }
 
-// 4. enter to search
+// 4. enter button to search
 const input = document.getElementById("searchInput");
 input.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
