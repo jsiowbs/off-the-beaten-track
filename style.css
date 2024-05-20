@@ -1,6 +1,6 @@
 .searchbar input {
     margin-bottom: 10px;
-    width: 30%;
+    width: 40%;
 }
 
 #searchButton, #clearButton, .button-value {
@@ -12,6 +12,16 @@
     color: white;
     margin-left: 0.2em;
 }
+
+.button-value {
+    background-color: #034752;
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
 
 #results {
     background-color: wheat;
