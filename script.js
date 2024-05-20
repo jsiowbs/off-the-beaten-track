@@ -397,43 +397,34 @@ function clearInputs() {
 
 // 5. filters recommendations by travel type
 function filterTravelType(category) {
-    const buttons = document.querySelectorAll(".button-value");
-    buttons.forEach(button => {
-        if (button.innerText.toLowerCase() === category.toLowerCase() || category.toLowerCase() === 'all') {
-            button.classList.add("active");
-        } else {
-            button.classList.remove("active");
+    let filteredRecommendations;
+        if (category.toLowerCase() === 'all') {
+            filteredRecommendations = recommendations;
+        } else if (category.toLowerCase() === 'beach') {
+            filteredRecommendations = recommendations.filter(rec =>
+                rec.travelType.some(type => type.toLowerCase().includes('beach'))
+            );
+        } else if (category.toLowerCase() === 'nature') {
+            filteredRecommendations = recommendations.filter(rec =>
+                rec.travelType.some(type => type.toLowerCase().includes('nature'))
+            );
+        } else if (category.toLowerCase() === 'shopping') {
+            filteredRecommendations = recommendations.filter(rec =>
+                rec.travelType.some(type => type.toLowerCase().includes('shopping'))
+            );
+        } else if (category.toLowerCase() === 'culture') {
+            filteredRecommendations = recommendations.filter(rec =>
+                rec.travelType.some(type => type.toLowerCase().includes('culture'))
+            );
+        } else if (category.toLowerCase() === 'nightlife') {
+            filteredRecommendations = recommendations.filter(rec =>
+                rec.travelType.some(type => type.toLowerCase().includes('nightlife'))
+            );
+        } else if (category.toLowerCase() === 'adventure') {
+            filteredRecommendations = recommendations.filter(rec =>
+                rec.travelType.some(type => type.toLowerCase().includes('adventure'))
+            );
         }
-    });
-
-let filteredRecommendations;
-    if (category.toLowerCase() === 'all') {
-        filteredRecommendations = recommendations;
-    } else if (category.toLowerCase() === 'beach') {
-        filteredRecommendations = recommendations.filter(rec =>
-            rec.travelType.some(type => type.toLowerCase().includes('beach'))
-        );
-    } else if (category.toLowerCase() === 'nature') {
-        filteredRecommendations = recommendations.filter(rec =>
-            rec.travelType.some(type => type.toLowerCase().includes('nature'))
-        );
-    } else if (category.toLowerCase() === 'shopping') {
-        filteredRecommendations = recommendations.filter(rec =>
-            rec.travelType.some(type => type.toLowerCase().includes('shopping'))
-        );
-    } else if (category.toLowerCase() === 'culture') {
-        filteredRecommendations = recommendations.filter(rec =>
-            rec.travelType.some(type => type.toLowerCase().includes('culture'))
-        );
-    } else if (category.toLowerCase() === 'nightlife') {
-        filteredRecommendations = recommendations.filter(rec =>
-            rec.travelType.some(type => type.toLowerCase().includes('nightlife'))
-        );
-    } else if (category.toLowerCase() === 'adventure') {
-        filteredRecommendations = recommendations.filter(rec =>
-            rec.travelType.some(type => type.toLowerCase().includes('adventure'))
-        );
-    }
 
 displayRecommendations(filteredRecommendations);
   }
