@@ -4,9 +4,8 @@
   "description": "travel recommender web app",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+      "start": "node script.js"},
+    "keywords": [],
   "author": "jonathan siow",
   "license": "ISC",
   "dependencies": {
