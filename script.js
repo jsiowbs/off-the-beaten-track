@@ -39,7 +39,7 @@ const recommendations = [
         "region": "Asia",
         "description": "An Indonesian island close to Singapore, Batam is known for its resorts, golf courses, and duty-free shopping. Visitors can relax on its beaches, indulge in spa treatments, or enjoy water sports. Batam also offers a glimpse into local delights with its seafood restaurants and traditional markets.",
         "travelType": ["Beach, Nature, Shopping"],
-        "pricePoint": "$$"
+        "pricePoint": "$"
     },
     {
         "title": "Beijing, China",
@@ -81,7 +81,7 @@ const recommendations = [
         "region": "Asia",
         "description": "The capital of Vietnam, Hanoi is known for its centuries-old architecture, vibrant street life, and delicious cuisine. The city's historic Old Quarter offers bustling markets, ancient temples, and French colonial buildings. Hanoi's culinary scene includes must-try dishes like pho, ban minh and bun cha.",
         "travelType": ["Shopping, Culture, Nightlife"],
-        "pricePoint": "$$"
+        "pricePoint": "$"
     },
     {
         "title": "Hawaii, USA",
@@ -95,14 +95,14 @@ const recommendations = [
         "region": "Asia",
         "description": "Formerly known as Saigon, this bustling metropolis offers a mix of historic landmarks, vibrant markets, and delicious street food. Key attractions include the War Remnants Museum, Notre-Dame Cathedral Basilica, and Ben Thanh Market. The city's dynamic street life and culinary delights make it a vibrant destination.",
         "travelType": ["Shopping, Culture, Nightlife"],
-        "pricePoint": "$$"
+        "pricePoint": "$"
     },
     {
         "title": "Hoi An, Vietnam",
         "region": "Asia",
         "description": "A historic town known for its well-preserved architecture, vibrant markets, and nearby beaches. Hoi An's charming streets are lined with lanterns, and its Old Town is a UNESCO World Heritage Site. Visitors can enjoy cooking classes, tailor-made clothing, and relaxing at nearby beaches like An Bang.",
         "travelType": ["Beach, Culture, Nightlife, Adventure"],
-        "pricePoint": "$$"
+        "pricePoint": "$"
     },
     {
         "title": "Hong Kong, China",
@@ -359,6 +359,7 @@ function displayRecommendations(results) {
         locations.classList.add("result");
         locations.innerHTML = `
             <h3>${rec.title}</h3>
+            <img src="${rec.image}" alt="${rec.title}">
             <p><strong>Description: </strong>${rec.description}</p>
             <p><strong>Travel Type: </strong>${rec.travelType.join(', ')}</p>
             <p><strong>Price Point: </strong>${rec.pricePoint}</p>
@@ -384,8 +385,8 @@ function searchInputs() {
             rec.pricePoint.toLowerCase() === keyword)
         );
     
-  displayRecommendations(filtered);
-}
+displayRecommendations(filtered);
+    }
 
 // 4. enter button to search
 const input = document.getElementById("searchInput");
@@ -399,11 +400,20 @@ input.addEventListener("keypress", function(event) {
 function clearInputs() {
     document.getElementById("searchInput").value = "";
     document.getElementById("results").innerHTML = "";
-    displayRecommendations(recommendations);
+
+displayRecommendations(recommendations);
     }
 
 // 6. filters recommendations by travel type
 function filterTravelType(category) {
+    const buttons = document.querySelectorAll(".buttonValue");
+    buttons.forEach(button => {
+        if (button.innerText.toLowerCase() === category.toLowerCase()) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
     let filteredRecommendations;
         if (category.toLowerCase() === 'all') {
             filteredRecommendations = recommendations;
@@ -434,4 +444,14 @@ function filterTravelType(category) {
         }
 
 displayRecommendations(filteredRecommendations);
-  }
+    }
+
+// scroll button when reaching page bottom
+window.addEventListener('scroll', function() {
+    const scrollButton = document.getElementById("scrollButton");
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+});

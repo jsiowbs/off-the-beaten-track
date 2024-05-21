@@ -1,8 +1,8 @@
 # Off The Beaten Track
 TechUp 2024 - Travel Recommender Web App
 
-Problem statement: Travelling is universal - an opportunity to explore the world and enrich our lives with new experiences and perspectives, or simply to enjoy a well-deserved break. However, amidst the vast array of destinations, we often get overwhelmed when deciding where to venture next. There’s just too many places to visit and too little time to do so. While most travel websites offer suggestions and lists, they often lack the personalization needed to cater to individual preferences, such as budget, traveller type, language, and climate.  Navigating through this sea of choices can be discouraging and time-consuming. Does this have to be the case?
+Problem statement: We love seeing the world... but travel planning is hard. There's just too many places to visit and too little time to do so. Studies have shown that we spend an average of 5 hours consuming online travel content before deciding where to go. And while most travel websites offer blogposts, lists and itineraries, they often lack the personalization for individual preferences - such as budget, traveller type and climate.  Navigating through this sea of choices can be discouraging and time-consuming.
 
-Proposed Solution: Introducing a web app to alleviate the burdens of travel planning by offering personalized recommendations based on user-defined parameters - inspiring new travel destinations, saving time, and reducing the initial stressors/barriers associated with travel planning.
+Proposed Solution: Introducing a web app that offers personalized recommendations based on user-defined keywords and filters - inspiring new travel destinations, saving time, and reducing the initial stressors/barriers associated with travel planning.
 
-Done by: Jonathan Siow (Government Data Division)
+Done by: Jonathan Siow (https://www.linkedin.com/in/jonathansiow/)
