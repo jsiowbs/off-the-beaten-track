@@ -359,7 +359,6 @@ function displayRecommendations(results) {
         locations.classList.add("result");
         locations.innerHTML = `
             <h3>${rec.title}</h3>
-            <img src="${rec.image}" alt="${rec.title}">
             <p><strong>Description: </strong>${rec.description}</p>
             <p><strong>Travel Type: </strong>${rec.travelType.join(', ')}</p>
             <p><strong>Price Point: </strong>${rec.pricePoint}</p>
@@ -373,10 +372,9 @@ displayRecommendations(recommendations);
 
 // 3. search by keywords
 function searchInputs() {
-    const searchInput = document.getElementById("searchInput").value.toLowerCase();
-    const keywords = searchInput.split(' ').filter(keyword => keyword !== "");
-
-    const filtered = recommendations.filter(rec =>
+    const search = document.getElementById("searchInput").value.toLowerCase();
+    const keywords = search.split(' ');
+    const searchRecommendations = recommendations.filter(rec =>
         keywords.every(keyword =>
             rec.title.toLowerCase().includes(keyword) ||
             rec.region.toLowerCase().includes(keyword) ||
@@ -385,7 +383,7 @@ function searchInputs() {
             rec.pricePoint.toLowerCase() === keyword)
         );
     
-displayRecommendations(filtered);
+displayRecommendations(searchRecommendations);
     }
 
 // 4. enter button to search
@@ -396,7 +394,7 @@ input.addEventListener("keypress", function(event) {
     }
 });
 
-// 5. clears search input and results
+// 5. resets earch input and results
 function clearInputs() {
     document.getElementById("searchInput").value = "";
     document.getElementById("results").innerHTML = "";
@@ -414,39 +412,39 @@ function filterTravelType(category) {
             button.classList.remove("active");
         }
     });
-    let filteredRecommendations;
+    let filterRecommendations;
         if (category.toLowerCase() === 'all') {
-            filteredRecommendations = recommendations;
+            filterRecommendations = recommendations;
         } else if (category.toLowerCase() === 'beach') {
-            filteredRecommendations = recommendations.filter(rec =>
+            filterRecommendations = recommendations.filter(rec =>
                 rec.travelType.some(type => type.toLowerCase().includes('beach'))
             );
         } else if (category.toLowerCase() === 'nature') {
-            filteredRecommendations = recommendations.filter(rec =>
+            filterRecommendations = recommendations.filter(rec =>
                 rec.travelType.some(type => type.toLowerCase().includes('nature'))
             );
         } else if (category.toLowerCase() === 'shopping') {
-            filteredRecommendations = recommendations.filter(rec =>
+            filterRecommendations = recommendations.filter(rec =>
                 rec.travelType.some(type => type.toLowerCase().includes('shopping'))
             );
         } else if (category.toLowerCase() === 'culture') {
-            filteredRecommendations = recommendations.filter(rec =>
+            filterRecommendations = recommendations.filter(rec =>
                 rec.travelType.some(type => type.toLowerCase().includes('culture'))
             );
         } else if (category.toLowerCase() === 'nightlife') {
-            filteredRecommendations = recommendations.filter(rec =>
+            filterRecommendations = recommendations.filter(rec =>
                 rec.travelType.some(type => type.toLowerCase().includes('nightlife'))
             );
         } else if (category.toLowerCase() === 'adventure') {
-            filteredRecommendations = recommendations.filter(rec =>
+            filterRecommendations = recommendations.filter(rec =>
                 rec.travelType.some(type => type.toLowerCase().includes('adventure'))
             );
         }
 
-displayRecommendations(filteredRecommendations);
+displayRecommendations(filterRecommendations);
     }
 
-// scroll button when reaching page bottom
+// 7. scroll button when reaching page bottom
 window.addEventListener('scroll', function() {
     const scrollButton = document.getElementById("scrollButton");
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
