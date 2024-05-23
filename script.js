@@ -443,13 +443,3 @@ function filterTravelType(category) {
 
 displayRecommendations(filterRecommendations);
     }
-
-// 7. scroll button when reaching page bottom
-window.addEventListener('scroll', function() {
-    const scrollButton = document.getElementById("scrollButton");
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        scrollButton.style.display = "block";
-    } else {
-        scrollButton.style.display = "none";
-    }
-});

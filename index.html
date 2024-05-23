@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Travel Recommender</title>
+    <title>Off The Beaten Track | Travel Recommender </title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFZGR7GCZ7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,17 +15,17 @@
     </script>
 </head>
 <body>
-    <div class="py-5 text-center">
+    <div class="head py-5 text-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-luggage-fill" viewBox="0 0 16 16">
             <path d="M2 1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V5h.5A1.5 1.5 0 0 1 8 6.5V7H7v-.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5H4v1H2.5v.25a.75.75 0 0 1-1.5 0v-.335A1.5 1.5 0 0 1 0 13.5v-7A1.5 1.5 0 0 1 1.5 5H2zM3 5h2V2H3z"></path>
             <path d="M2.5 7a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5a.5.5 0 0 1 .5-.5m10 1v-.5A1.5 1.5 0 0 0 11 6h-1a1.5 1.5 0 0 0-1.5 1.5V8H8v8h5V8zM10 7h1a.5.5 0 0 1 .5.5V8h-2v-.5A.5.5 0 0 1 10 7M5 9.5A1.5 1.5 0 0 1 6.5 8H7v8h-.5A1.5 1.5 0 0 1 5 14.5zm9 6.5V8h.5A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5z"></path>
         </svg>
-        <h1 class="display-5 fw-bold text-center">Travel Recommender</h1>
-        <p class="lead col-lg-6 mx-auto text-center">Search or filter by "traveller type" to find your next adventure. Whether you're seeking a budget-friendly beach getaway or an adventurous mountain expedition, say hello to a world of personalized travel!</p>
+        <h1 class="display-5 fw-bold text-center">Off The Beaten Track</h1>
+        <p class="lead col-lg-8 mx-auto text-center">Search or filter by "traveller type" to find your next adventure. Whether you're seeking a budget-friendly beach getaway or an adventurous mountain expedition, say hello to a world of personalized travel!</p>
     </div>
     <div class="container">
         <div class="searchbar text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
             </svg>
             <input type="text" id="searchInput" placeholder="Search by keywords...">
@@ -46,13 +46,11 @@
             <!-- Recommendations will be displayed here -->
                 <!-- image, city, description, region, travel type, price point -->
         </div>
-    </div><br>
-    <div class="scroll" align="center">
-        <button id="scrollButton" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'})" style="display: none;">Return to Top</button>
     </div>
-    <footer class="mx-auto p-5">
-        <span class="text-body-secondary"><strong>TechUp (May 2024). </strong>
-            Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</span>
+    <footer class="footer mx-auto p-5">
+        <p class="text-secondary">
+        <strong>© Jonathan Siow (TechUp - May 2024). </strong>
+        Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
     </footer>
     <script src="script.js"></script>
 </body>
