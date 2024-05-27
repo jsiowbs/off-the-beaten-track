@@ -409,13 +409,17 @@ function displayRecommendations(results) {
         const locationDiv = document.createElement("div");
         locationDiv.classList.add("result");
         locationDiv.innerHTML = `
+        <div class="left">
             <h3>${rec.title}</h3>
             <img src="${rec.imageUrl}" alt="${rec.title}">
+        </div>
+        <div class="right">
             <p><strong>Description: </strong>${rec.description}</p>
+            <p><strong>Region: </strong>${rec.region}</p>
             <p><strong>Travel Type: </strong>${rec.travelType.join(', ')}</p>
             <p><strong>Price Point: </strong>${rec.pricePoint}</p>
-            <hr> `;
-        resultsContainer.appendChild(locationDiv);
+        </div>`;
+    resultsContainer.appendChild(locationDiv);
     });
 }
 

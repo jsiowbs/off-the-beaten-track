@@ -1,6 +1,5 @@
 .searchbar input {
-    margin-bottom: 10px;
-    width: 40%;
+    width: 30%;
 }
 
 #searchButton {
@@ -36,16 +35,33 @@
     background-color: wheat;
     border: 2px solid #091D36;
     padding: 30px;
+    padding-bottom: 0px;
 }
 
+
 .result {
-    text-align: center;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.result .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
 }
 
 .result img {
-    width: 600px; 
-    height: 400px; 
-    margin-top: 20px; 
-    margin-bottom: 20px
+    height: 250px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.result .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    margin-top: 50px;
 }
