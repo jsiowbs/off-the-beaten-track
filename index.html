@@ -23,13 +23,13 @@
     </div>
     <div class="container">
         <div class="searchbar text-center">
-            <p class="lead col-lg-8 mx-auto text-center">Search by country, region, price ($, $$, $$$), travel type, attractions</p>
+            <p class="lead col-lg-8 mx-auto text-center" id="instructions">Search by country, region, price ($, $$, $$$), travel type, attractions</p>
             <input type="text" id="searchInput" placeholder="Enter keyword here">
             <button onclick="searchInputs()" id="searchButton">Search</button>
             <button onclick="clearInputs()" id="clearButton">Clear</button>
         </div><br>
         <div class="buttons text-center">
-            <p class="lead col-lg-8 mx-auto text-center"><em>Or</em> select by 'travel type'</p>
+            <p class="lead col-lg-8 mx-auto text-center"><em>Or</em> select your 'travel type'</p>
             <button class="buttonValue" onclick="filterTravelType('All')">All</button>
             <button class="buttonValue" onclick="filterTravelType('Beach')">Beach</button>
             <button class="buttonValue" onclick="filterTravelType('Nature')">Nature</button>
@@ -43,6 +43,7 @@
             <!-- Recommendations will be displayed here -->
         </div>
     </div>
+    <button id="scrollToTopBtn" onclick="scrollToSection()">Scroll To Top </button>
     <footer class="footer mx-auto p-5">
         <p class="text-secondary">
         <strong>© Jonathan Siow (TechUp - May 2024). </strong>

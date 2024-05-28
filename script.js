@@ -18,7 +18,7 @@ const recommendations = [
     {
         "title": "Bali, Indonesia",
         "region": "Asia",
-        "description": "A tropical paradise that attracts visitors with its serene beaches, lush rice terraces, and vibrant cultural experiences. Bali is famous for its temples, traditional dance performances, and wellness retreats. The island offers a range of activities, from surfing and diving to exploring local markets and savoring Balinese cuisine.",
+        "description": "A tropical paradise that attracts visitors with its serene beaches, lush rice terraces, and vibrant cultural experiences. Bali is famous for its temples, traditional dance performances, and wellness retreats. The island offers a range of watersport activities, from surfing, snorkeling and diving, to exploring local markets and savoring Balinese cuisine.",
         "travelType": ["Beach, Nature, Culture, Nightlife, Adventure"],
         "pricePoint": "$",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/675172642/pura-ulun-danu-bratan-temple-in-Bali-/960x0.jpg?format=jpg&width=960"
@@ -74,7 +74,7 @@ const recommendations = [
     {
         "title": "Cebu, Philippines",
         "region": "Asia",
-        "description": "Known as the \"Queen City of the South,\" Cebu offers a mix of historic landmarks, beautiful beaches, and a vibrant nightlife. Visitors can explore the Magellan's Cross, Basilica del Santo Niño, and dive into the crystal-clear waters of Moalboal. Cebu's lively festivals, such as Sinulog, showcase the city's rich cultural heritage.",
+        "description": "Known as the \"Queen City of the South,\" Cebu offers a mix of historic landmarks, beautiful beaches, and a vibrant nightlife. Visitors can explore the Magellan's Cross, Basilica del Santo Niño, and dive into the crystal-clear waters of Moalboal. Cebu's lively festivals, such as Sinulog Festival and Haladaya Festival, showcase the city's rich cultural heritage.",
         "travelType": ["Beach, Nature, Adventure"],
         "pricePoint": "$",
         "imageUrl": "https://mediaim.expedia.com/destination/1/9c7cca303cc0a57dd5f86dfeebb973f9.jpg"
@@ -146,7 +146,7 @@ const recommendations = [
     {
         "title": "Johor Bahru, Malaysia",
         "region": "Asia",
-        "description": "A gateway to Malaysia, known for its theme parks, shopping malls, and cultural attractions. Johor Bahru offers family-friendly destinations like Legoland Malaysia and Hello Kitty Town, as well as vibrant local markets and seafood restaurants.",
+        "description": "A gateway to Malaysia, known for its theme parks, shopping malls, and cultural attractions. Johor Bahru offers family-friendly destinations like Legoland Malaysia and Hello Kitty Town, as well as vibrant local markets and seafood restaurants. It's a favourite weekend destination for Singaporeans!",
         "travelType": ["Shopping"],
         "pricePoint": "$",
         "imageUrl": "https://static.thehoneycombers.com/wp-content/uploads/sites/2/2023/06/johor-bahru-guide-aerial-view-night-sky-900x643.jpg"
@@ -218,7 +218,7 @@ const recommendations = [
     {
         "title": "Male, Maldives",
         "region": "Asia",
-        "description": "The capital of the Maldives, offering luxury resorts, crystal-clear waters, and world-class diving. Male's attractions include the Islamic Centre, Sultan Park, and local markets. The Maldives is renowned for its overwater bungalows and stunning marine life.",
+        "description": "The capital of the Maldives, offering luxury resorts, crystal-clear waters, and world-class diving. The Maldives is southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland. Male's attractions include the Islamic Centre, Sultan Park, and local markets. The Maldives is renowned for its overwater bungalows and stunning marine life.",
         "travelType": ["Beach, Nature, Adventure"],
         "pricePoint": "$$$",
         "imageUrl": "https://afar.brightspotcdn.com/dims4/default/5af1313/2147483647/strip/true/crop/3000x1592+0+323/resize/1440x764!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg"
@@ -250,7 +250,7 @@ const recommendations = [
     {
         "title": "New York, USA",
         "region": "America",
-        "description": "Known as the \"City That Never Sleeps,\" New York offers iconic landmarks, Broadway shows, and diverse culinary experiences. Key attractions include Times Square, Central Park, and the Statue of Liberty. The city's vibrant neighborhoods, such as Soho and Brooklyn, add to its dynamic and vibrant atmosphere.",
+        "description": "Known as the \"City That Never Sleeps,\" New York offers iconic landmarks, Broadway shows, and diverse culinary experiences. Key attractions include Times Square, Central Park, and the Statue of Liberty. The city's vibrant neighborhoods, such as Soho and Brooklyn, add to its dynamic and vibrant atmosphere. In most of Manhattan, streets are mapped out on an easily navigable grid system of streets and avenues.",
         "travelType": ["Shopping, Culture, Nightlife"],
         "pricePoint": "$$$",
         "imageUrl": "https://media.cntraveler.com/photos/63483e15ef943eff59de603a/3:2/w_3000,h_2000,c_limit/New%20York%20City_GettyImages-1347979016.jpg"
@@ -298,7 +298,7 @@ const recommendations = [
     {
         "title": "Phnom Phen, Cambodia",
         "region": "Asia",
-        "description": "The capital city of Cambodia, rich in history, with bustling markets and ancient temples. Phnom Penh's attractions include the Royal Palace, Silver Pagoda, and the Killing Fields. The city's vibrant street life and riverside promenade add to its charm.",
+        "description": "The capital city of Cambodia, rich in history, with bustling markets and ancient temples. Phnom Penh's attractions include the Royal Palace, Silver Pagoda, and the Killing Fields. Notably, daytrip to the stunning Angkor Wat, which is considered the eighth Wonder of the World. The city's vibrant street life and riverside promenade add to its charm.",
         "travelType": ["Culture, Adventure"],
         "pricePoint": "$",
         "imageUrl": "https://a.cdn-hotels.com/gdcs/production44/d1864/11b4988c-106d-4717-86b2-4ed6c1e85363.jpg"
@@ -418,8 +418,12 @@ function displayRecommendations(results) {
             <p><strong>Region: </strong>${rec.region}</p>
             <p><strong>Travel Type: </strong>${rec.travelType.join(', ')}</p>
             <p><strong>Price Point: </strong>${rec.pricePoint}</p>
-        </div>`;
+        </div> `;
     resultsContainer.appendChild(locationDiv);
+    
+    const hr = document.createElement("hr");
+    hr.classList.add("separator");
+    resultsContainer.appendChild(hr);
     });
 }
 
@@ -499,3 +503,19 @@ function filterTravelType(category) {
 
 displayRecommendations(filterRecommendations);
     }
+
+// 7. Scroll to top/section
+window.onscroll = function() {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.documentElement.scrollTop > 1200) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+function scrollToSection(id) {
+    document.getElementById("instructions").scrollIntoView({
+        behavior: 'smooth'
+    });
+}
