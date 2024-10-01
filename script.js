@@ -13,7 +13,7 @@ const recommendations = [
         "description": "Known as the \"City of Sails,\" Auckland is surrounded by stunning natural beauty, including harbors, islands, and volcanic landscapes. The city offers a mix of outdoor adventures, from hiking and sailing to exploring nearby beaches and parks. Auckland is also a cultural hub, with a rich Maori heritage and a diverse arts scene, featuring galleries, museums, and theaters.",
         "travelType": ["Beach, Nature, Adventure"],
         "pricePoint": "$$",
-        "imageUrl": "https://afar.brightspotcdn.com/dims4/default/5a37c04/2147483647/strip/true/crop/3000x1592+0+342/resize/1440x764!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F07%2F6a%2F49c8995449aab970530b5dc69fb4%2Ftravelguides-auckland-miloszmaslanka-shutterstock.jpg"
+        "imageUrl": "https://content.r9cdn.net/rimg/dimg/09/c2/d0aa16e0-city-2575-166c0a657e0.jpg?width=1366&height=768&xhint=1673&yhint=1229&crop=true"
     },
     {
         "title": "Bali, Indonesia",
